@@ -34,11 +34,6 @@ app.use(cors({
 app.use("/auth", authRouter);
 app.use("/disease", diseaseRouter);
 
-// Serve frontend 
-app.use(express.static(path.join(_dirname, "/frontend/dist")))
-app.get("*", (req, res) => {
-    res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"))
-})
 
 // Listen Server 
 server.listen(PORT, () => {

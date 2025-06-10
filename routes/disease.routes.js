@@ -1,6 +1,6 @@
 import express from "express";
 import { findFirstAid, scanDisease, symptomsAnalyzer } from "../controllers/disease.controller.js";
-import fileUpload from "express-fileupload"
+import fileUpload from "express-fileupload";
 
 const diseaseRouter = express.Router();
 
